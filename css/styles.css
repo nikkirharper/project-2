@@ -1,0 +1,572 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+@font-face{
+  font-family: 'Oakwood-Rough';
+  src: url('../fonts/oakwood-rough.otf') format('opentype');
+}
+
+@font-face{
+  font-family: 'Signature';
+  src: url('../fonts/signature.ttf') format('truetype');
+}
+
+body {
+	font-family: 'acumin-pro', sans-serif;
+	font-size: .92rem;
+}
+
+h1 {
+	font-family: 'Oakwood-Rough', serif;
+	font-size: 1.6rem;
+	color: #ffffff;
+	padding-left: 40%;
+	margin-bottom: 10%;
+	position: absolute;
+	top: 33%;
+}
+
+h2 {
+	color: #189d98;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+h3 {
+	color: #290e37;
+    font-size: 1.25rem;
+    padding-top: 15px;
+}
+
+h4 {
+	color: #632b6c;
+  font-style: italic;
+	padding-top: 5px;
+}
+
+.container {
+	width: 81%;
+	padding-left: 8%;
+	padding-right: 3%;
+	padding-bottom: 1%;
+}
+
+.divider {
+  background: black;
+  width: 90%;
+  height: 3px;
+}
+
+.desktop-menu {
+	display:none;
+}
+
+/********************************** HAMBURGER MENU STYLES **************************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:2% 15px 0px 15px;
+  color:#ffffff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#ffffff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; top: 45px; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/********************************** HAMBURGER MENU STYLES END **************************/
+
+
+/*=====================
+*
+*   Header Styling
+*
+=====================*/
+header {
+  background: #189d98;
+  width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+.logo-top {
+	width: 15%;
+	max-width: 100px;
+	padding: 5px 0 5px 5%;
+	position: relative;
+	float: left;
+}
+
+/*=================================
+*
+*   Hero Image and Intro Styling
+*
+==================================*/
+
+.hero {
+	position: relative;
+	margin-top: 6%;
+}
+
+.heroimage {
+	width: 100%;
+}
+
+.comm {
+	top: 46%;
+}
+
+.design {
+	top: 58%;
+}
+
+.container-intro {
+	padding: 2% 5% 0 8%;
+	}
+
+.signature {
+	font-family: 'Signature', sans-serif;
+	font-size: 1.5rem;
+	color: #189d98;
+	padding: 25px 0;
+}
+
+/*=================================
+*
+*   Experience/Education Styling
+*
+==================================*/
+
+#experience, #education, #portfolio, #about, #connect {
+	padding-left: 5%;
+	padding-top: 19%;
+}
+
+#experience, #education, #about, #connect {
+	background-color: #e8e6e7;
+}
+
+article a {
+  text-decoration: none;
+  color: #189d98;
+}
+
+article a:hover {
+  color: #290e37;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+article ul {
+	padding-left: 10%;
+}
+
+.location-pin {
+	width: 12%;
+	max-width: 40px;
+	padding-top: 2%;
+}
+
+.teal-text {
+	color: #189d98;
+	display: inline;
+}
+
+.download-resume {
+  background: #189d98;
+	color: #ffffff;
+  width: 60%;
+  text-align: center;
+  font-weight: bold;
+  padding: 4%;
+  display: block;
+  margin: 16% 0;
+
+  text-decoration: none;
+}
+
+.download-resume:hover {
+  background: #632b6c;
+}
+
+/*=================================
+*
+*   Portfolio Styling
+*
+==================================*/
+
+.digital-examples-gallery {
+  max-width: 20%;
+}
+
+.examples {
+  max-width: 250px;
+  display: inline-block;
+  position: relative;
+  vertical-align: text-top;
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.examples img {
+  max-width: 250px;
+}
+
+.digital-overlay-text {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 10px;
+  width: 100%;
+  height: 100%;
+  background: #189d98;
+  opacity: 0;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.print-overlay-text {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 10px;
+  width: 100%;
+  height: 100%;
+  background: #189d98;
+  opacity: 0;
+  max-height: 387px;
+  max-width: 250px;
+}
+
+.examples:hover .digital-overlay-text {
+  opacity: .75;
+}
+
+.examples:hover .print-overlay-text {
+  opacity: .75;
+}
+
+.text {
+  color: white;
+  font: 200px bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+
+.note {
+  font-style: italic;
+}
+
+/*=================================
+*
+*   About Styling
+*
+==================================*/
+
+.container-about {
+	padding-left: 8%;
+	padding-right: 3%;
+}
+
+.copy {
+	padding: 10px 0;
+}
+
+.head-shot {
+	width: 70%;
+	padding-left: 8%;
+	margin: -2%;
+}
+
+/*=================================
+*
+*   Aside Styling
+*
+==================================*/
+
+aside {
+	background: #ffffff;
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: #189d98;
+	text-align: center;
+	padding: 25px 0;
+}
+
+.author {
+	font-family: 'Signature', sans-serif;
+	font-size: 1.5rem;
+	color: #189d98;
+	padding-top: 25px;
+}
+
+/*=================================
+*
+*   Connect Styling
+*
+==================================*/
+
+.socialmedia {
+  padding: 20px 0;
+}
+
+.social {
+	padding-right:3%;
+	transition: 3s;
+}
+
+.social:hover {
+  width: 80px;
+  transition: 3s;
+}
+
+/*=================================
+*
+*   Footer Styling
+*
+==================================*/
+
+footer {
+  background: #189d98;
+  width: 100%;
+  bottom: 0;
+}
+
+.logo-bottom {
+	width: 15%;
+	max-width: 100px;
+	padding: 5px 5% 5px 80%;
+}
+
+
+/******************** START MIN-WIDTH 425PX MEDIA QUERY ******************/
+@media (min-width: 425px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.head-shot {
+		width: 60%;
+		padding-left: 12%;
+		margin: -1%
+	}
+}
+
+/******************** END MIN-WIDTH 425PX MEDIA QUERY ******************/
+
+
+/******************** START MIN-WIDTH 525PX MEDIA QUERY ******************/
+
+@media (min-width: 525px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.download-resume {
+		width: 50%;
+		font-size: 1rem;
+	}
+
+	.head-shot {
+		width: 55%;
+		padding-left: 14%;
+	}
+}
+
+/******************** END MIN-WIDTH 525PX MEDIA QUERY ******************/
+
+/******************** START MIN-WIDTH 625PX MEDIA QUERY ******************/
+
+@media (min-width: 625px) {
+	.menu, .cross, .hamburger {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+		text-align: right;
+		}
+
+	.desktop-menu li {
+		  display: inline;
+		  position: relative;
+		  top: 45px;
+		}
+
+	.desktop-menu a {
+		  color: white;
+		  text-decoration: none;
+		  font-weight: bold;
+		  font-size: .95rem;
+		  margin-right: 4.5%;
+		}
+
+	.desktop-menu a:hover {
+		  color: #290e37;
+		  border-bottom: medium solid #290e37;
+		}
+
+	h1 {
+		font-size: 2.8rem;
+	}
+
+	.copy {
+		width: 55%;
+	}
+
+	.container-about {
+		display: flex;
+	}
+
+	.head-shot {
+		width: 47%;
+		margin: 0;
+		padding: 0;
+		float: right;
+	}
+
+	aside {
+		padding: 40px 0;
+	}
+}
+
+/******************** END MIN-WIDTH 625PX MEDIA QUERY ******************/
+
+
+/******************** START MIN-WIDTH 725PX MEDIA QUERY ******************/
+
+@media (min-width: 725px) {
+	.desktop-menu li {
+		  top: 50px;
+		}
+
+	.desktop-menu a {
+		  font-size: 1.1rem;
+		  margin-right: 4.5%;
+		}
+
+	h1 {
+		font-size: 3rem;
+		}
+
+		.download-resume {
+			width: 307px;
+			padding: 24.5px;
+			margin: 98px 0;
+			font-size: 1rem;
+		}
+
+	.head-shot {
+		width: 39%;
+	}
+}
+
+/******************** END MIN-WIDTH 725PX MEDIA QUERY ******************/
+
+
+/******************** START MIN-WIDTH 825PX MEDIA QUERY ******************/
+@media (min-width: 825px) {
+	#experience, #education, #portfolio, #about, #connect {
+		padding-top: 14%;
+	}
+
+	h1 {
+		font-size: 3.2rem;
+	}
+}
+
+/******************** END MIN-WIDTH 825PX MEDIA QUERY ******************/
+
+
+/******************** START MIN-WIDTH 925PX MEDIA QUERY ******************/
+
+@media (min-width: 925px) {
+	.desktop-menu li {
+		  top: 50px;
+		}
+
+	.desktop-menu a {
+		  font-size: 1.2rem;
+		  margin-right: 4.7%;
+		}
+
+	h1 {
+		font-size: 3.5rem;
+		}
+
+	#experience, #education, #portfolio, #about, #connect {
+			padding-top: 12%;
+		}
+
+	.head-shot {
+		width: 32%;
+	}
+
+	aside {
+		font-size: 1.6rem;
+	}
+}
+
+/******************** END MIN-WIDTH 925PX MEDIA QUERY ******************/
+
+/******************** START MIN-WIDTH 1025PX MEDIA QUERY ******************/
+
+@media (min-width: 1025px) {
+
+	.head-shot {
+		width: 24%;
+		}
+	}
+
+/******************** END MIN-WIDTH 1200PX MEDIA QUERY ******************/
+
+
+/******************** START MIN-WIDTH 1200PX MEDIA QUERY ******************/
+
+@media (min-width: 1200px) {
+
+	h1 {
+		font-size: 4.2rem;
+		}
+	}
+
+/******************** END MIN-WIDTH 1200PX MEDIA QUERY ******************/
