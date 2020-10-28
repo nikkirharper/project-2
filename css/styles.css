@@ -313,6 +313,7 @@ article ul {
 
 .head-shot {
 	width: 70%;
+	max-width: 280px;
 	padding-left: 8%;
 	margin: -2%;
 }
@@ -458,11 +459,22 @@ footer {
 	}
 
 	.head-shot {
-		width: 47%;
+		width: 45%;
 		margin: 0;
 		padding: 0;
 		float: right;
 	}
+
+	/* Safari 7.1+ */
+
+	_::-webkit-full-page-media, _:future, :root .safari_only {
+
+		width: 46%;
+		height: 376.6px;
+
+	}
+
+
 
 	aside {
 		padding: 40px 0;
@@ -498,6 +510,15 @@ footer {
 	.head-shot {
 		width: 39%;
 	}
+
+	/* Safari 7.1+ */
+
+	_::-webkit-full-page-media, _:future, :root .safari_only {
+
+		width: 280px;
+		height: 376.6px;
+
+	}
 }
 
 /******************** END MIN-WIDTH 725PX MEDIA QUERY ******************/
@@ -511,6 +532,19 @@ footer {
 
 	h1 {
 		font-size: 3.2rem;
+	}
+
+	/* Safari 7.1+ */
+
+	_::-webkit-full-page-media, _:future, :root .safari_only {
+
+		width: 280px;
+		height: 376.6px;
+
+	}
+
+	aside {
+		font-size: 1.6rem;
 	}
 }
 
@@ -541,12 +575,24 @@ footer {
 		width: 32%;
 	}
 
+	/* Safari 7.1+ */
+
+	_::-webkit-full-page-media, _:future, :root .safari_only {
+
+		width: 280px;
+		height: 376.6px;
+
+	}
+
 	aside {
 		font-size: 1.6rem;
 	}
+
+
 }
 
 /******************** END MIN-WIDTH 925PX MEDIA QUERY ******************/
+
 
 /******************** START MIN-WIDTH 1025PX MEDIA QUERY ******************/
 
@@ -568,5 +614,6 @@ footer {
 		font-size: 4.2rem;
 		}
 	}
+
 
 /******************** END MIN-WIDTH 1200PX MEDIA QUERY ******************/
